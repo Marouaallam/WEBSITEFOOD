@@ -1,0 +1,101 @@
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(237, 212, 186);
+    display: flex;
+    flex-direction: row;
+}
+.navbar .leftbar {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+.navbar .leftbar img {
+    width: 90px;
+}
+.navbar .rightbar {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar a {
+    color: rgb(6, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .navbar .rightbar button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+  }
+  .navbar .rightbar svg {
+    font-size: 40px;
+  }
+  
+  .navbar #open {
+    padding-left: 0px;
+  }
+  .navbar #open img {
+    display: none;
+  }
+  
+  .navbar #close img {
+    display: inherit;
+  }
+  
+  .navbar #open .hiddenbar {
+    display: inherit;
+    margin-left: 30px;
+  }
+  
+  .navbar #close .hiddenbar {
+    display: none;
+  }
+  
+  .navbar #open a {
+    width: 70px;
+    margin: 5px;
+  }
+
+
+
+  
+  @media only screen and (max-width: 900px) {
+    .navbar .rightbar a {
+      width: 70px;
+    }
+    .navbar .leftbar {
+      padding-left: 50px;
+    }
+  } 
+
+  @media only screen and (max-width: 600px) {
+    .navbar .rightbar a {
+      display: none;
+    }
+  
+    .navbar .rightbar {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  
+    .navbar .rightbar button {
+      display: inherit;
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    .navbar .rightbar button {
+      display: none;
+    }
+  
+    .hiddenLinks {
+      display: none;
+    }
+}
